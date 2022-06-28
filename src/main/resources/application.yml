@@ -1,0 +1,19 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:creditdb
+
+  jpa:
+    show-sql=true
+server:
+  port: 8081
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include=*
+
+
